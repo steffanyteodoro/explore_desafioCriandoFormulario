@@ -1,0 +1,151 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-size: 16px;
+
+  --primary: #535971;
+  --secundary: #ff5374;
+  --background: #efefef;
+  --white: #fff;
+  --text: #4e4958;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+  font-family: "Staatliches", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Poppins", sans-serif;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 436px;
+  background: var(--primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content {
+  width: 750px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 140px;
+  width: 417px;
+  color: var(--white);
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2,
+legend {
+  font-size: 24px;
+  color: var(--primary);
+}
+
+header p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 58px;
+  padding: 64px;
+  background: var(--white);
+  border-radius: 8px 8px 0 0;
+}
+
+.fieldsetContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.fieldsetInputs {
+  display: flex;
+  flex-direction: column;
+}
+
+legend {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e6f0;
+}
+
+input {
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  background: #fafafc;
+  color: var(--text);
+  border: 1px solid #e6e6f0;
+  padding: 0 24px;
+}
+
+label {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text);
+}
+
+label span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #c1bccc;
+  margin-left: 8px;
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.col-3 {
+  display: flex;
+  gap: 10px;
+}
+
+.col-3 > div:nth-child(1) {
+  margin-right: 22px;
+  width: 100%;
+}
+
+footer {
+  height: 160px;
+  background: var(--primary);
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  padding: 52px 70px;
+}
+
+footer input {
+  font-family: "Staatliches", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: var(--secundary);
+  color: var(--white);
+  border: none;
+}
